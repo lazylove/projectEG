@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'EkkamaiStandard-Light';
-  src: url('fonts/EkkamaiStandard-Light.ttf') format('truetype');
+  src: url('css/fonts/EkkamaiStandard-Light.ttf') format('truetype');
 }
 
 body {
@@ -27,6 +27,9 @@ body {
  
   text-align: center;
 }
+.p1{
+  font: 1em sans-serif;
+}
 
 #mainC{
   display: grid;
@@ -34,11 +37,11 @@ body {
   grid-template-columns:  40% 60%;
   grid-template-rows: 20% 80%;
   grid-template-areas: "head  head"
-                        "nav  main";
-  grid-gap: 10px;
+                       "img  main";
+  grid-gap: 3px;
   justify-content: center;
   text-align: center;
-  height: 400px;
+  height: 320px;
 }
 
 #mainC > header  {
@@ -46,17 +49,17 @@ body {
   background-color: #8ca0ff;
 }
 #mainC > image1  {
-  grid-area: nav;
+  grid-area: img;
   background-color: #8ca0ff;
-  justify-content: center;
-  text-align: center;
-  align-self: center;
+  /* justify-content: center;
+  text-align: center; */
+  /* align-self: center; */
 }
 
 
 .article {
   position: relative;
-  height: 400px;
+  height: 320px;
 }
 
 /* .block1 {
@@ -100,4 +103,11 @@ body {
   vertical-align: baseline;
   font-size: 150%;
   color: #2A416A;
+}
+
+ol,ul {
+  list-style:none;
+ 
+    padding: 0;
+    margin: 15px;
 }
