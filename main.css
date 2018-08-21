@@ -9,9 +9,9 @@ body {
 
 .container {
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
-  grid-template-columns:  320px;
-  grid-template-rows: 40% 400px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  /* grid-template-columns:  320px;
+  grid-template-rows: 40% 400px; */
   grid-gap: 10px;
   justify-content: center;
   text-align: center;
@@ -28,19 +28,46 @@ body {
   text-align: center;
 }
 
-.article {
-  position: relative;
+#mainC{
+  display: grid;
+  
+  grid-template-columns:  40% 60%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas: "head  head"
+                        "nav  main";
+  grid-gap: 10px;
+  justify-content: center;
+  text-align: center;
+  height: 400px;
 }
 
-.block1 {
+#mainC > header  {
+  grid-area: head;
+  background-color: #8ca0ff;
+}
+#mainC > image1  {
+  grid-area: nav;
+  background-color: #8ca0ff;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+}
+
+
+.article {
+  position: relative;
+  height: 400px;
+}
+
+/* .block1 {
   height: auto;
-  width: 80%;
+  width: 100%;
   object-fit: cover;
   justify-content: center;
   text-align: center;
-  margin: 50px 30px;
+  margin: 30px 30px;
   
-}
+} */
 
 .test1 {
   display: flex;
@@ -63,7 +90,7 @@ body {
 .h1_logo {
   font-family: 'EkkamaiStandard-Light';
   vertical-align: baseline;
-  font-size: 100%;
+  font-size: 300%;
   color: #2A416A;
 
 }
