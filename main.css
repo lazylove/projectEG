@@ -35,7 +35,7 @@ body {
   display: grid;
   
   grid-template-columns:  40% 60%;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 10% 90%;
   grid-template-areas: "head  head"
                        "img  main";
   grid-gap: 3px;
@@ -47,6 +47,7 @@ body {
 #mainC > header  {
   grid-area: head;
   background-color: #8ca0ff;
+  align-self: center;
 }
 #mainC > image1  {
   grid-area: img;
@@ -110,4 +111,24 @@ ol,ul {
  
     padding: 0;
     margin: 15px;
+}
+
+.h2{
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  text-align: left;
+  margin: 0 0 0 35px;
+}
+.sp1{
+  text-align: left;
+}
+.sp2{
+  margin: 0 0 0 40px;
+}
+
+.sp3{
+  margin: 0 0 0 48px;
 }
